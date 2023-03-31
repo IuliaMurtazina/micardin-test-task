@@ -1,0 +1,181 @@
+.description {
+  background-color: $color-light-blue;
+
+  &__content {
+    @include vert-flex;
+    gap: 2rem;
+    padding: 1rem 2rem;
+
+    @media only screen and (max-width: 375px) {
+      padding: 1rem;
+    }
+  }
+
+  &__heading {
+    line-height: 1rem;
+
+    &--center {
+      text-align: center;
+    }
+  }
+
+  &__feature {
+    font-weight: 600;
+    font-size: 6.4rem;
+    line-height: 8.2rem;
+    -webkit-text-fill-color: $color-light-red;
+    -webkit-text-stroke: 1px #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &__bcg-images {
+    position: relative;
+    height: 31.6rem;
+    text-align: center;
+  }
+
+  &__text {
+    font-weight: 450;
+    text-align: center;
+    margin: 2rem 0;
+
+    b {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+.circle-description {
+  z-index: 1;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.micardin-description {
+  height: 30rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  margin-left: -1.5rem;
+}
+
+.fruits-description-1 {
+  height: 25rem;
+  top: 5%;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.fruits-description-2 {
+  height: 12rem;
+  transform: rotate(-24.32deg);
+  top: 1%;
+  right: 58%;
+  z-index: 3;
+}
+
+.fruits-description-3 {
+  transform: rotate(-78.64deg);
+  height: 10rem;
+  top: 15%;
+  right: 76%;
+  z-index: 4;
+}
+
+.fruits-description-4 {
+  height: 10rem;
+  bottom: 5%;
+  right: 5%;
+  transform: rotate(15.42deg);
+  z-index: 6;
+}
+
+
+.ingredients {
+  overflow: hidden;
+
+  &__list {
+    list-style: none;
+    display: flex;
+  }
+
+  &__pagination {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.ingredient {
+  @include vert-flex;
+  text-align: center;
+  align-items: center;
+  padding: 0 2rem;
+
+  @media only screen and (max-width: 375px) {
+    padding: 0 3rem;
+  }
+
+  &__img {
+    width: 29.7rem;
+    height: 29.7rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  &__text {
+    color: #ffffff;
+    font-size: 1.6rem;
+    margin-top: 3rem;
+  }
+
+  &__description {
+    width: 27rem;
+    background: linear-gradient(0deg, #232E72 0%, #3A5CFD 100%), #FFC600;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 2rem 2rem;
+    padding: 18rem 1.5rem 3.5rem 1.5rem;
+    margin-top: -15rem;
+  }
+}
+
+.swiper-pagination {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.swiper-pagination-bullet {
+  width: 1.6rem;
+  height: 1.6rem;
+
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  background: #FF3131;
+}
+
+.work {
+
+  &__list {
+    list-style: none;
+    padding: 3rem 2rem;
+  }
+
+  &__item {
+    line-height: 2.3rem;
+    color: #495A95;
+    padding-left: 4rem;
+    background: url(../img/heart.png) no-repeat;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+}

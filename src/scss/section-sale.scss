@@ -1,0 +1,35 @@
+.sale {
+  margin-top: -7.5rem;
+
+  background: linear-gradient(180deg, #fff 0%, $color-light-blue 30%, $color-light-blue 100%);
+
+  &__content {
+    padding: 1.5rem 1.8rem;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    color: $color-main-blue;
+    padding: 0 2rem;
+
+    &:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+
+    span {
+      color: $color-light-red;
+    }
+
+    &--uppercase {
+      text-transform: uppercase;
+    }
+  }
+
+  &__bcg-images {
+    position: relative;
+    height: 36rem;
+  }
+}

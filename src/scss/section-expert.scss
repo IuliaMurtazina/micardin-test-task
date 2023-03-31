@@ -1,0 +1,33 @@
+.expert {
+  background-color: #ffffff;
+
+  &__content {
+    padding: 3.6rem 2.4rem;
+    color: #312A7C;
+  }
+
+  &__description {
+    @include vert-flex;
+    align-items: center;
+    gap: 1.8rem;
+    margin-top: 2rem;
+  }
+
+  &__career {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    margin-top: 2rem;
+
+    span {
+      text-transform: uppercase;
+    }
+  }
+}

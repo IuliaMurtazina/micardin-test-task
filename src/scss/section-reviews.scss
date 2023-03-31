@@ -1,0 +1,89 @@
+.reviews {
+  background-color: $color-light-blue;
+  overflow: hidden;
+
+  &__content {
+    padding: 3rem 2.4rem;
+    @include vert-flex;
+    align-items: center;
+    gap: 4.5rem;
+  }
+
+  &__heading {
+    span {
+      text-transform: uppercase;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+  }
+
+  &__pagination {
+    margin-top: 3rem;
+    margin-bottom: .5rem;
+  }
+
+  &__bcg-images {
+    position: relative;
+    height: 31.6rem;
+    width: 33.5rem;
+    text-align: center;
+  }
+}
+
+.reviews-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.review {
+  background: #fff;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  flex-shrink: 0;
+
+  &__heading {
+    display: flex;
+  }
+
+  &__description {
+    padding: 1.7rem 2.3rem;
+  }
+
+  &__photo {
+    height: 11.6rem;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: $color-main-blue;
+    margin-bottom: 1rem;
+  }
+
+  &__rating {
+    height: 2.5rem;
+  }
+
+  &__text {
+    padding: 1.7rem 2rem 2.6rem 2rem;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    text-align: center;
+    color: $color-main-blue;
+  }
+}
+
+.recomendations {
+  @include vert-flex;
+  gap: 2rem;
+
+  p {
+    font-weight: 450;
+    text-align: center;
+    line-height: 1.8rem;
+    color: $color-main-blue;
+  }
+}
